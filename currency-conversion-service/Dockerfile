@@ -6,7 +6,7 @@ LABEL orgination="STS"
 
 ARG USERNAME="apiuser"
 ARG HOMEDIR='/appwork'
-ARG JAR_FILE=target/*.jar
+ARG JAR_FILE=*.jar
 
 RUN adduser -h ${HOMEDIR} -s /bin/sh -D ${USERNAME}
 
